@@ -1,7 +1,7 @@
 site_name: 'Документация Scorocode'
 pages:
+    - 'О документации': 'index.md'
     - 'Scorocode': 
-        - 'О документации': 'index.md'
         - 'Общие сведения': 'main/main.md'
         - 'Начало работы': 'main/main1.md'
         - 'Личный кабинет': 'main/main2.md'
@@ -52,14 +52,16 @@ pages:
         - 'Класс Message': 'Java/Message.md'
         - 'Класс WebSocket': 'Java/WebSocket.md'
         - 'Пример Storehouse': 'Java/Storehouse.md'
-theme: 'material'
+theme_dir: 'material'
 extra:
   logo: 'img/Logo.png'
   palette:
     primary: 'blue'
     accent: 'light blue'
+
 markdown_extensions:
-    - admonition
-    - codehilite(css_class=code)
-    - toc:
-        'permalink': '#'
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite(guess_lang=false)
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc(permalink=true)
