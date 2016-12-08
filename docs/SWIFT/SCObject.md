@@ -53,7 +53,7 @@ let obj2 = SCObject(collection: "items")
 
 <a name="SCObject+set"></a>
 
-### SCObject.set(dic)
+### .set(dic)
 Метод для передачи данных объекту
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -84,7 +84,7 @@ newItem.save() {
 
 <a name="SCObject+save"></a>
 
-### SCObject.save(callback)
+### .save(callback)
 Метод сохраняет объект в хранилище данных приложения или обновляет уже имеющийся там объект
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -112,7 +112,7 @@ newItem.save() {
 
 <a name="SCObject+getById"></a>
 
-### SCObject.getById(id, collection, callback)
+### .getById(id, collection, callback)
 Метод для для получения объекта коллекции из БД по его _id. 
 
 **Тип**: метод <code>[SCObject](#SCObject)</code>  
@@ -142,7 +142,7 @@ SCObject.getById("p3OtsLXw8p", collection: "items") {
 
 <a name="SCObject+get"></a>
 
-### SCObject.get(name)
+### .get(name)
 Метод для получения данных указанного поля объекта.
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -160,7 +160,7 @@ dataItem.get("price")
 
 <a name="SCObject+upload"></a>
 
-### SCObject.upload(field, filename, data, callback)
+### .upload(field, filename, data, callback)
 Метод для загрузки файлов
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -203,7 +203,7 @@ newItem.save() {
 
 <a name="SCObject+getFileLink"></a>
 
-### Object.getFileLink(fieldName, callback)
+### .getFileLink(fieldName, callback)
 Метод для получения ссылки на файл.
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -232,7 +232,7 @@ item.getFileLink("attachment")
 
 <a name="SCObject+deleteFile"></a>
 
-### SCObject.deleteFile(field, filename, callback)
+### .deleteFile(field, filename, callback)
 
 Метод для удаления файла
 
@@ -262,7 +262,7 @@ item.delete("attachment", "swiftDocs.pdf")
 
 <a name="SCObject+remove"></a>
 
-### SCObject.remove(callback)
+### .remove(callback)
 Метод для удаления указанного объекта
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -295,7 +295,7 @@ obj.remove() {
 
 <a name="SCObject+push"></a>
 
-### Object.push(name, _ value)
+### .push(name, _ value)
 Метод для добавления элемента в массив.
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -316,7 +316,7 @@ editItem.push("location", SCString("Sierra Army Depot"))
 
 <a name="SCObject+pushEach"></a>
 
-### SCObject.pushEach(name, _ value)
+### .pushEach(name, _ value)
 Метод для добавления нескольких элементов в массив.
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -337,7 +337,7 @@ editItem.pushEach("location", SCArray([SCString("Sierra Army Depot"), SCString("
 
 <a name="SCObject+pull"></a>
 
-### SCObject.pull(name, _ value)
+### .pull(name, _ value)
 Метод для удаления всех элементов массива, значение которых равно указанному.
 
 **Тип**: Метод <code>[Object](#SCObject)</code>  
@@ -366,7 +366,7 @@ editItem.pushEach("location", SCArray([SCString("Sierra Army Depot"), SCString("
 
 <a name="SCObject+addToSet"></a>
 
-### SCObject.addToSet(name, _ value)
+### .addToSet(name, _ value)
 Метод для добавления элемента в массив только в том случае, если в массиве отсутствуют элементы с таким значением.
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -387,7 +387,7 @@ editItem.addToSet("location", SCString("A"))
 
 <a name="SCObject+addToSetEach"></a>
 
-### SCObject.addToSetEach(name, _ value)
+### .addToSetEach(name, _ value)
 Метод для добавления элементов в массив только в том случае, если в массиве отсутствуют элементы с таким значением.
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -408,7 +408,7 @@ editItem.addToSetEach("location", SCArray([SCString("Sierra Army Depot"), SCStri
 
 <a name="SCObject+pop"></a>
 
-### SCSCObject.pop(name, _ value)
+### .pop(name, _ value)
 Метод для удаления первого или последнего элемента массива
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -429,7 +429,7 @@ editItem.pop("location", 1)
 
 <a name="SCObject+inc"></a>
 
-### SCObject.inc(name, _ value)
+### .inc(name, _ value)
 Метод увеличивает значение числового поля на заданное число
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -450,7 +450,7 @@ editItem.inc("amount", SCInt(-14))
 
 <a name="SCObject+currentDate"></a>
 
-### SCObject.currentDate(name, typeSpec)
+### .currentDate(name, typeSpec)
 Устанавливает текущее время в качестве значения поля
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -472,7 +472,7 @@ editItem.currentDate("someDate", typeSpec: "date")
 
 <a name="SCObject+mul"></a>
 
-### SCObject.mul(name, _ value)
+### .mul(name, _ value)
 Метод умножает значение числового поля на заданное число
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -492,7 +492,7 @@ editItem.min("price", SCDouble(42.42))
 
 <a name="SCObject+min"></a>
 
-### SCObject.min(name, _ value)
+### .min(name, _ value)
 Метод обновляет значение числового поля только в случае, если новое значение меньше текущего значения поля
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  
@@ -514,7 +514,7 @@ editItem.min("price", SCInt(42))
 
 <a name="SCObject+max"></a>
 
-### SCObject.max(name, _ value)
+### .max(name, _ value)
 Метод обновляет значение числового поля только в случае, если новое значение больше текущего значения поля
 
 **Тип**: Метод <code>[SCObject](#SCObject)</code>  

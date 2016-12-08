@@ -1,13 +1,15 @@
 <a name="Scorocode"></a>
 
-## SС - Базовый класс для работы с SDK
+## SС 
+
+Базовый класс для работы с SDK
 
 * [SC](#Scorocode)
     * [.initWith(opt)](#Scorocode+initWith)
 
 <a name="Scorocode+initWith"></a>
 
-## SC.initWith(applicationId, clientId, accessKey, fileKey, messageKey)
+## .initWith(applicationId, clientId, accessKey, fileKey, messageKey)
 
 Инициализация SDK. Значения параметров определяются в AppDelegate.swift
 

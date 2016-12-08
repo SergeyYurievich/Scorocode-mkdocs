@@ -142,7 +142,7 @@ let dataArray = SCArray([dataBool, dataString, dataInt, dataDouble, dataDate, da
 
 <a name="SCDictionary"></a>
 
-###### SCDictionary(value)
+### SCDictionary(value)
 
 Хранение объекта "ключ"-"значение"
 

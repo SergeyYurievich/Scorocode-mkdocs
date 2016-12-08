@@ -1,6 +1,6 @@
 <a name="SCUser"></a>
 
-### SCUser
+## SCUser
 SCUser
 
 Класс для работы с серверными скриптами приложения
@@ -12,8 +12,10 @@ SCUser
     * [.signup(username, email, password, callback)](#SCScript+signup)
     * [.signup(callback)](#SCScript+signup2)
 
+----------------------------------------------------------------------------------------------
+
 <a name="SCUser+init"></a>
-#### init()
+## init()
 Инициализация SCUser
 
 **Пример**
@@ -23,7 +25,7 @@ let appUser = SCUser()
 
 ----------------------------------------------------------------------------------------------
 <a name="SCUser+login"></a>
-#### SCUser.login(email, password, callback)
+## .login(email, password, callback)
 Метод для аутентификации пользователя приложения
 
 
@@ -67,7 +69,7 @@ let appUser = SCUser()
 
 ----------------------------------------------------------------------------------------------
 <a name="SCUser+logout"></a>
-#### SCUser.logout(callback)
+## .logout(callback)
 Метод для завершения активной сессии пользователя.
 
 
@@ -89,7 +91,7 @@ let appUser = SCUser()
 ```
 ----------------------------------------------------------------------------------------------
 <a name="SCUser+signup"></a>
-#### SCUser.signup(username, email, password, callback)
+## .signup(username, email, password, callback)
 Метод для регистрации пользователя приложения.
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
@@ -149,7 +151,7 @@ let appUser = SCUser()
 
 ----------------------------------------------------------------------------------------------
 <a name="SCUser+signup2"></a>
-#### SCUser.signup(callback)
+## .signup(callback)
 Метод для регистрации пользователя приложения. Поля устанавливаются методами родительского класса Object.
 
 | Параметр | Тип | Свойства | Описание | Пример значения |

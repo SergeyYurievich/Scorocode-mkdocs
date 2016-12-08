@@ -24,7 +24,7 @@
 
 ### Подключение библиотеки Starscream
 
-#### Подробную информацию о способах подключения библиотеки Starscream вы сможете найти в Readme.md репозитория [daltoniam/Starscream](https://github.com/daltoniam/Starscream).
+**Подробную информацию о способах подключения библиотеки Starscream вы сможете найти в Readme.md репозитория [daltoniam/Starscream](https://github.com/daltoniam/Starscream).**
 
 
 Для подключения библиотеки к проекту, необходимо установить [Carthage](https://github.com/Carthage/Carthage)
@@ -59,7 +59,7 @@ $(SRCROOT)/Carthage/Build/iOS/Starscream.framework
 
 ### Пример использования библиотеки Starscream
 
-#### Подробную информацию о способах испольования библиотеки Starscream вы сможете найти в Readme.md репозитория [daltoniam/Starscream](https://github.com/daltoniam/Starscream).
+**Подробную информацию о способах испольования библиотеки Starscream вы сможете найти в Readme.md репозитория [daltoniam/Starscream](https://github.com/daltoniam/Starscream).**
 
 ```
 import UIKit

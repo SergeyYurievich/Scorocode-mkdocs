@@ -1,6 +1,7 @@
 <a name="SCScript"></a>
 
 ## SCScript
+
 SCScript
 
 Класс для работы с серверными скриптами приложения
@@ -13,10 +14,8 @@ SCScript
 
 <a name="SCScript+run"></a>
 
-### SCScript.run(scriptID, pool, callback)
+## .run(scriptID, pool, callback)
 Метод для запуска серверного скрипта
-
-**Тип**: Метод <code>[SCScript](#SCScript)</code>  
 
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
