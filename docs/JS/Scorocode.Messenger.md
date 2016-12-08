@@ -1,8 +1,8 @@
 <a name="Scorocode.Messenger"></a>
 
-## Содержание
+Содержание
 
-* [.Messenger](#Scorocode.Messenger)
+* [Messenger](#Scorocode.Messenger)
     * [new Messenger()](#new_Scorocode.Messenger_new)
     * [.sendEmail(options, callbacks)](#Scorocode.Messenger+sendEmail) ⇒ <code>{error: Boolean, count: Number}</code>
     * [.sendPush(options, callbacks)](#Scorocode.Messenger+sendPush) ⇒ <code>{error: Boolean, count: Number}</code>
@@ -13,6 +13,7 @@
 <a name="new_Scorocode.Messenger_new"></a>
 
 ## new Messenger()
+
 Класс для отправки сообщений
 
 **Пример**
@@ -25,6 +26,7 @@ var Broadcast = new Scorocode.Messenger();
 <a name="Scorocode.Messenger+sendEmail"></a>
 
 ## .sendEmail(options, callbacks)
+
 Метод для отправки Email
 
 
@@ -77,7 +79,8 @@ Broadcast.sendEmail({
 
 <a name="Scorocode.Messenger+sendPush"></a>
 
-## .sendPush(options, callbacks) ⇒ <code>Object</code>
+## .sendPush(options, callbacks)
+
 Метод для отправки Push
 
 
@@ -132,7 +135,8 @@ Broadcast.sendPush({
 
 <a name="Scorocode.Messenger+sendSms"></a>
 
-## .sendSms(options, callbacks) ⇒ <code>Object</code>
+## .sendSms(options, callbacks)
+
 Метод для отправки СМС
 
 

@@ -5,7 +5,7 @@
 Пример реализации чат-приложения с использованием Scorocode.WebSocket - [Scorochat](https://niksmith.github.io/). Исходный код приложения опубликован на GitHub в репозитории [NikSmith/niksmith.github.io](https://github.com/NikSmith/niksmith.github.io)
 
 
-## Содержание
+Содержание
 
 * [.WebSocket](#Scorocode.WebSocket)
     * [new WebSocket(channame)](#new_Scorocode.WebSocket_new)
@@ -34,7 +34,7 @@ var WS = new Scorocode.WebSocket('chatroom');
 
 <a name="Scorocode.WebSocket+on"></a>
 
-## WebSocket.on(event, callback)
+## .on(event, callback)
 Метод для установления коллбэка на одно из событий:
 
 * open - Соединение установлено
@@ -80,7 +80,7 @@ WS.send(data);
 
 <a name="Scorocode.WebSocket+send"></a>
 
-## WebSocket.send(message)
+## .send(message)
 Метод для отправки сообщения в канал
 
 **Тип**: Метод <code>[WebSocket](#Scorocode.WebSocket)</code>

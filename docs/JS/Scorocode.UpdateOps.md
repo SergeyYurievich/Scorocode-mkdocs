@@ -1,6 +1,6 @@
 <a name="Scorocode.UpdateOps"></a>
 
-## Содержание
+Содержание
 
 * [.UpdateOps](#Scorocode.UpdateOps)
     * [.set(data)](#Scorocode.UpdateOps+set)
@@ -61,7 +61,7 @@ Items.notEqualTo("price", 42)
 
 <a name="Scorocode.UpdateOps+set"></a>
 
-## UpdateOps.set(data)
+## .set(data)
 Метод для передачи данных объекту
 
 
@@ -114,7 +114,7 @@ Items.notEqualTo("price", 42)
 
 <a name="Scorocode.UpdateOps+push"></a>
 
-## UpdateOps.push(key, value) ⇒ <code>Object</code>
+## .push(key, value)
 Метод для добавления элемента в массив.
 
 
@@ -162,7 +162,7 @@ Items.exists("arrayField")
 
 <a name="Scorocode.UpdateOps+pull"></a>
 
-## UpdateOps.pull(key, value)
+## .pull(key, value)
 Метод для удаления всех элементов массива, значение которых равно указанному.
 
   
@@ -215,7 +215,7 @@ Items.exists("arrayField")
 
 <a name="Scorocode.UpdateOps+pullAll"></a>
 
-## UpdateOps.pullAll(key, value)
+## .pullAll(key, value)
 
 Метод для удаления всех элементов массива, значения которых равны одному из указанных значений.
 
@@ -270,7 +270,7 @@ Items.exists("arrayField")
 
 <a name="Scorocode.UpdateOps+addToSet"></a>
 
-## UpdateOps.addToSet(key, value)
+## .addToSet(key, value)
 Метод для добавления элемента в массив только в том случае, если в массиве отсутствуют элементы с таким значением.
 
 
@@ -323,7 +323,7 @@ Items.exists("arrayField")
 
 <a name="Scorocode.UpdateOps+pop"></a>
 
-## UpdateOps.pop(key, pos)
+## .pop(key, pos)
 Метод для удаления первого или последнего элемента массива
 
 
@@ -376,7 +376,7 @@ Items.exists("arrayField")
 
 <a name="Scorocode.UpdateOps+inc"></a>
 
-## UpdateOps.inc(key, amount)
+## .inc(key, amount)
 Метод увеличивает значение числового поля на заданное число
 
 
@@ -428,7 +428,7 @@ Items.exists("price")
 
 <a name="Scorocode.UpdateOps+currentDate"></a>
 
-## UpdateOps.currentDate()
+## .currentDate()
 Устанавливает текущее время в качестве значения поля
 
 
@@ -479,7 +479,7 @@ Items.find()
 
 <a name="Scorocode.UpdateOps+mul"></a>
 
-## UpdateOps.mul(key, number)
+## .mul(key, number)
 Метод умножает значение числового поля на заданное число
 
 
@@ -533,7 +533,7 @@ Items.exists("price")
 
 <a name="Scorocode.UpdateOps+min"></a>
 
-## UpdateOps.min()
+## .min()
 Метод обновляет значение числового поля только в случае, если новое значение меньше текущего значения поля
 
 
@@ -590,7 +590,7 @@ Items.exists("price")
 
 <a name="Scorocode.UpdateOps+max"></a>
 
-## UpdateOps.max()
+## .max()
 Метод обновляет значение числового поля только в случае, если новое значение больше текущего значения поля
 
 

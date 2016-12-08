@@ -1,6 +1,6 @@
 <a name="Scorocode.User"></a>
 
-## Содержание
+Содержание
 
 * [.User](#Scorocode.User)
     * [new User()](#new_Scorocode.User_new)
@@ -16,6 +16,7 @@
 Класс для работы с пользователями приложения.
 
 **Пример**  
+
 ```js
 // Подключим SDK и инициализируем его. 
 var Scorocode = require('scorocode');
@@ -46,7 +47,7 @@ appUser.signup()
 
 <a name="Scorocode.User+signup"></a>
 
-## user.signup(options) ⇒ <code>[promise.&lt;Scorocode.User&gt;](#Scorocode.User)</code>
+## .signup(options)
 Метод для регистрации пользователей приложения. 
 
 **Тип**: Метод <code>[Scorocode.User](#Scorocode.User)</code>  
@@ -90,7 +91,8 @@ appUser.signup()
 
 <a name="Scorocode.User+login"></a>
 
-## user.login(email, password, options) ⇒ <code>[promise.&lt;Scorocode.User&gt;](#Scorocode.User)</code>
+## .login(email, password, options)
+
 Метод для аутентификации пользователя приложения и получения пользовательской сессии.
 
 **Тип**: instance method of <code>[User](#Scorocode.User)</code>  
@@ -143,7 +145,8 @@ appUser.login("user@domain.zone", "CorrectHorseBatteryStaple")
 
 <a name="Scorocode.User+logout"></a>
 
-## user.logout(options) 
+## .logout(options) 
+
 Метод для деаутентификации пользователя приложения и удаления пользовательской сессии.
 
 **Тип**: Метод <code>[Scorocode.User](#Scorocode.User)</code>  

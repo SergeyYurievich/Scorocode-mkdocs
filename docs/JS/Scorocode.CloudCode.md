@@ -1,6 +1,6 @@
 <a name="Scorocode.CloudCode"></a>
 
-## Содержание
+Содержание
 
 * [.CloudCode](#Scorocode.CloudCode)
     * [new CloudCode(id)](#new_Scorocode.CloudCode_new)
@@ -11,6 +11,7 @@
 <a name="new_Scorocode.CloudCode_new"></a>
 
 ## new CloudCode(id)
+
 Класс для работы с серверным кодом
 
 **Возвращает**: <code>[Scorocode.CloudCode](#Scorocode.CloudCode)</code> - Возвращает новый экземпляр Scorocode.CloudCode
@@ -23,7 +24,8 @@
 
 <a name="Scorocode.CloudCode+run"></a>
 
-## CloudCode.run(pool, callbacks) ⇒ <code>promise.{error: Boolean}</code>
+## .run(pool, callbacks) 
+
 Метод для запуска серверного кода
 
 | Параметр | Тип | Описание |

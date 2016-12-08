@@ -80,7 +80,7 @@ questItem.save()
 
 <a name="Scorocode.Object+getById"></a>
 
-## Object.getById(_id, options) ⇒ <code>[Promise.&lt;Scorocode.Object&gt;](#Scorocode.Object)</code>
+## .getById(_id, options)
 Метод для для получения объекта коллекции из БД по его _id. 
 
 **Параметры**
@@ -146,7 +146,7 @@ getItem.getById("NseSaqqd5v")
 
 <a name="Scorocode.Object+get"></a>
 
-## Object.get(key) ⇒ <code>promise.&lt;value&gt;</code>
+## .get(key)
 Метод для получения данных указанного поля объекта.
 
 | Параметр | Тип | Описание |
@@ -191,7 +191,7 @@ getItem.getById("NseSaqqd5v")
 
 <a name="Scorocode.Object+uploadFile"></a>
 
-## Object.uploadFile(field, filename, file, options) ⇒ <code>promise.&lt;String&gt;</code>
+## .uploadFile(field, filename, file, options)
 Метод для загрузки файлов
 
 | Параметр | Тип | Описание |
@@ -252,7 +252,7 @@ attachToItem.getById("xL0uOFtiJx")
 
 <a name="Scorocode.Object+getFileLink"></a>
 
-## Object.getFileLink(field) ⇒ <code>String</code>
+## .getFileLink(field)
 Метод для получения ссылки на файл.
 
 | Параметр | Тип | Описание |
@@ -276,7 +276,7 @@ attachToItem.getById("xL0uOFtiJx")
     // Обработчик успешного выполнения запроса
     .then((success)=>{
         // Получим ссылку на файл, хранящийся в поле "attachment" объекта
-        console.log("Вот ссылка на файл:", getObjects.getFileLink("attachment"));
+        console.log("Вот ссылка на файл:", attachToItem.getFileLink("attachment"));
     })
         // Обработчик ошибки
     .catch((error) => {
@@ -302,7 +302,7 @@ attachToItem.getById("xL0uOFtiJx")
 
 <a name="Scorocode.Object+save"></a>
 
-## Object.save(options) ⇒ <code>[promise.&lt;Scorocode.Object&gt;](#Scorocode.Object)</code>
+## .save(options)
 Метод сохраняет объект в хранилище данных приложения или обновляет уже имеющийся там объект
 
 | Параметр | Тип | Описание |
@@ -355,7 +355,7 @@ questItem.save()
 
 <a name="Scorocode.Object+remove"></a>
 
-## Object.remove(options)
+## .remove(options)
 Метод для удаления указанного объекта
 
 | Параметр | Тип | Описание |
@@ -414,7 +414,7 @@ getItem.getById("hejJU4BEGP")
 
 <a name="Scorocode.Object+extend"></a>
 
-## Object.extend(collName, childObject) ⇒ <code>[Scorocode.Object]</code>
+## .extend(collName, childObject)
 
 Метод для преобразования данных выборки Scorocode.Query в отдельные экземпляры Scorocode.Object
 
@@ -465,7 +465,7 @@ data.find()
 
 <a name="Scorocode.Object+set"></a>
 
-## Object.set(data)
+## .set(data)
 Метод для передачи данных объекту
 
 | Параметр | Тип | Описание |
@@ -506,7 +506,7 @@ questItem.save()
 
 <a name="Scorocode.Object+push"></a>
 
-## Object.push(key, value)
+## .push(key, value)
 Метод для добавления элемента в массив.
 
 | Параметр | Тип | Описание |
@@ -553,7 +553,7 @@ Item.getById("NseSaqqd5v")
 
 <a name="Scorocode.Object+pull"></a>
 
-## Object.pull(key, value)
+## .pull(key, value)
 Метод для удаления всех элементов массива, значение которых равно указанному.
 
  
@@ -606,7 +606,7 @@ Item.getById("MgYs9BEQUM")
 
 <a name="Scorocode.Object+pullAll"></a>
 
-## Object.pullAll(key, value)
+## .pullAll(key, value)
 
 Метод для удаления всех элементов массива, значения которых равны одному из указанных значений.
 
@@ -659,7 +659,7 @@ Item.getById("CrT49joIxn")
 
 <a name="Scorocode.Object+addToSet"></a>
 
-## Object.addToSet(key, value)
+## .addToSet(key, value)
 Метод для добавления элемента в массив только в том случае, если в массиве отсутствуют элементы с таким значением.
 
 | Параметр | Тип | Описание |
@@ -711,7 +711,7 @@ Item.getById("CrT49joIxn")
 
 <a name="Scorocode.Object+pop"></a>
 
-## Object.pop(key, pos)
+## .pop(key, pos)
 Метод для удаления первого или последнего элемента массива
 
 | Параметр | Тип | Описание |
@@ -764,7 +764,7 @@ getItem.getById("NseSaqqd5v")
 
 <a name="Scorocode.Object+inc"></a>
 
-## Object.inc(key, amount)
+## .inc(key, amount)
 Метод увеличивает значение числового поля на заданное число
 
 | Параметр | Тип | Описание |
@@ -818,7 +818,7 @@ Item.getById("gNxzwAfvDj")
 
 <a name="Scorocode.Object+currentDate"></a>
 
-## Object.currentDate()
+## .currentDate()
 Устанавливает текущее время в качестве значения поля
 
 | Параметр | Тип | Описание |
@@ -861,7 +861,7 @@ Item.save()
 
 <a name="Scorocode.Object+mul"></a>
 
-## Object.mul(key, number)
+## .mul(key, number)
 Метод умножает значение числового поля на заданное число
 
 | Параметр | Тип | Описание |
@@ -916,7 +916,7 @@ Item.getById("8Qcfll2GwE")
 
 <a name="Scorocode.Object+min"></a>
 
-## Object.min()
+## .min()
 Метод обновляет значение числового поля только в случае, если новое значение меньше текущего значения поля
 
 | Параметр | Тип | Описание |
@@ -966,7 +966,7 @@ Item.getById("CrT49joIxn")
 
 <a name="Scorocode.Object+max"></a>
 
-## Object.max()
+## .max()
 Метод обновляет значение числового поля только в случае, если новое значение больше текущего значения поля
 
 | Параметр | Тип | Описание |

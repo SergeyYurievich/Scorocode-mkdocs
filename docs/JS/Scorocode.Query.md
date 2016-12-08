@@ -1,4 +1,4 @@
-## Содержание
+Содержание
 
 * [.Query](#Scorocode.Query)
     * [new Query(collName)](#new_Scorocode.Query_new) ⇒ <code>Scorocode.Object</code>
@@ -75,7 +75,7 @@ data.find()
 
 <a name="Scorocode.Query+find"></a>
 
-## Query.find(options) ⇒ <code>promise.{error: Boolean, limit: Number, skip: Number, result: [{Scorocode.Object}]}</code>
+## .find(options)
 
 Метод для запроса документов из коллекции. Возвращает данные объектов, которые соответствуют условиям выборки. Если условия не заданы, по-умолчанию возвращает первые 100 объектов коллекции.
 
@@ -148,7 +148,7 @@ data.find()
 
 <a name="Scorocode.Query+count"></a>
 
-## Query.count(options) ⇒ <code>promise.{error: Boolean, result: Number}</code>
+## .count(options)
 
 Метод для подсчета количества объектов, которые удовлетворяют условиям запроса.
 
@@ -189,7 +189,7 @@ countItems.exists("price")
 
 <a name="Scorocode.Query+update"></a>
 
-## Query.update(Object, options) ⇒ <code>promise.{error: Boolean, result: {count: Number, docs: Array}}</code>
+## .update(Object, options) 
 
 Метод для обновления запрошенных объектов.
 
@@ -264,7 +264,7 @@ Items.notEqualTo("price", 42)
 
 <a name="Scorocode.Query+remove"></a>
 
-## Query.remove(options) ⇒ <code>promise.{count: Number, docs: Array}</code> 
+## .remove(options)
 
 Метод для удаления запрошенных объектов.
 
@@ -325,7 +325,7 @@ Items.exists("arrayField")
 
 <a name="Scorocode.Query+reset"></a>
 
-## Query.reset() 
+## .reset() 
 
 Метод для сброса условий выборки
 
@@ -360,7 +360,7 @@ getItems.equalTo("price", 42)
 
 <a name="Scorocode.Query+equalTo"></a>
 
-## Query.equalTo(field, value)
+## .equalTo(field, value)
 
 Метод для получения всех объектов c указанным в условии значением поля.
 
@@ -399,7 +399,7 @@ getItems.equalTo("price", 42)
 
 <a name="Scorocode.Query+notEqualTo"></a>
 
-## Query.notEqualTo(field, value)
+## .notEqualTo(field, value)
 Метод для получения всех объектов, за исключением объектов с указанным в условии значением поля.
 
 
@@ -437,7 +437,7 @@ getItems.notEqualTo("price", 42)
 
 <a name="Scorocode.Query+containedIn"></a>
 
-## Query.containedIn(field, value)
+## .containedIn(field, value)
 Метод для получения всех объектов, значение поля которых содержит указанные в запросе элементы массива.
 
 
@@ -479,7 +479,7 @@ getItems.containedIn("price",[-42, 41.999, 42])
 
 <a name="Scorocode.Query+containsAll"></a>
 
-## Query.containsAll(field, value)
+## .containsAll(field, value)
 Метод для получения всех объектов, значение поля которых содержит все указанные в запросе элементы массива.
 
 
@@ -520,7 +520,7 @@ getItems.containsAll("arrayField",[4, 8, 15, 16, 23, 42])
 
 <a name="Scorocode.Query+notContainedIn"></a>
 
-## Query.notContainedIn(field, value)
+## .notContainedIn(field, value)
 Метод для получения всех объектов, значение поля которых не содержит указанные в запросе элементы массива.
 
 
@@ -563,7 +563,7 @@ getItems.notContainedIn("price",[41.999, 42])
 
 <a name="Scorocode.Query+greaterThan"></a>
 
-## Query.greaterThan(field, value)
+## .greaterThan(field, value)
 Метод для получения всех объектов, значение поля которых больше, чем указанное в запросе число.
 
 **Возвращает**: <code>Object</code> - Запрошенные данные  
@@ -602,7 +602,7 @@ getItems.greaterThan("createdAt", "2016-05-19T15:35:16.000Z")
 
 <a name="Scorocode.Query+greaterThanOrEqualTo"></a>
 
-## Query.greaterThanOrEqualTo(field, value)
+## .greaterThanOrEqualTo(field, value)
 Метод для получения всех объектов, значение поля которых не меньше, чем указанное в запросе число.
 
 
@@ -640,7 +640,7 @@ getItems.greaterThanOrEqualTo("price", 41.999)
 
 <a name="Scorocode.Query+lessThan"></a>
 
-## Query.lessThan(field, value)
+## .lessThan(field, value)
 Метод для получения всех объектов, значение поля которых меньше, чем указанное в запросе число.
 
 
@@ -678,7 +678,7 @@ getItems.lessThan("price", 41)
 
 <a name="Scorocode.Query+lessThanOrEqualTo"></a>
 
-## Query.lessThanOrEqualTo(field, value) 
+## .lessThanOrEqualTo(field, value) 
 Метод для получения всех объектов, значение поля которых не больше, чем указанное в запросе число.
 
 
@@ -716,7 +716,7 @@ getItems.lessThanOrEqualTo("updatedAt", "2016-05-19T15:35:16.000Z")
 
 <a name="Scorocode.Query+exists"></a>
 
-## Query.exists(field
+## .exists(field
 Метод для получения всех объектов с существующим значением заданного поля
 
 
@@ -751,7 +751,7 @@ Items.exists("price")
 
 <a name="Scorocode.Query+doesNotExist"></a>
 
-## Query.doesNotExist(field)
+## .doesNotExist(field)
 Метод для получения всех объектов с отсутствующим значением в заданном поле
 
 | Параметр | Тип | Описание |
@@ -785,7 +785,7 @@ Items.doesNotExist("price")
 
 <a name="Scorocode.Query+contains"></a>
 
-## Query.contains(field, value)
+## .contains(field, value)
 Метод для получения всех объектов со значением заданного поля, соответствующим заданному регулярному выражению.
 
 
@@ -828,7 +828,7 @@ getItems.contains("someString","[0-9]")
 
 <a name="Scorocode.Query+startsWith"></a>
 
-## Query.startsWith(field, value) 
+## .startsWith(field, value) 
 Метод для получения всех объектов со значением заданного поля, начинающимся с указанной строки.
 
 
@@ -870,7 +870,7 @@ getItems.startsWith("name", "Предм");
 
 <a name="Scorocode.Query+endsWith"></a>
 
-## Query.endsWith(field, value)
+## .endsWith(field, value)
 Метод для получения всех объектов со значением заданного поля, заканчивающимся на указанную строку.
 
 
@@ -911,7 +911,7 @@ getItems.endsWith("name", "чип");
 
 <a name="Scorocode.Query+limit"></a>
 
-## Query.limit(limit) 
+## .limit(limit) 
 Метод для указания лимита количества объектов выборки
 
 
@@ -953,7 +953,7 @@ getItems.limit(1000).contains("someString","[a-zA-Z-0-9]")
 
 <a name="Scorocode.Query+skip"></a>
 
-## Query.skip(skip)
+## .skip(skip)
 Метод для пропуска части объектов перед совершением выборки
 
 
@@ -997,7 +997,7 @@ getItems.limit(1000).skip(1000).contains("someString","[a-zA-Z-0-9]")
 
 <a name="Scorocode.Query+page"></a>
 
-## Query.page(page)
+## .page(page)
 Метод для постраничного вывода результатов выборки
 
 
@@ -1040,7 +1040,7 @@ getItems.limit(30).page(2).contains("someString","[a-zA-Z-0-9]")
 
 <a name="Scorocode.Query+ascending"></a>
 
-## Query.ascending(field)
+## .ascending(field)
 Метод для сортировки данных указанного поля в порядке возрастания перед совершением выборки.
 
 
@@ -1081,7 +1081,7 @@ getItems.limit(30).ascending("updatedAt").page(1).contains("someString","[a-zA-Z
 
 <a name="Scorocode.Query+descending"></a>
 
-## Query.descending(field)
+## .descending(field)
 Метод для сортировки данных указанного поля в порядке убывания перед совершением выборки.
 
 **Возвращает**: <code>Object</code> - Запрошенные данные  
@@ -1122,7 +1122,7 @@ getItems.limit(30).descending("price").page(1).contains("someString","[a-zA-Z-0-
 
 <a name="Scorocode.Query+or"></a>
 
-## Query.or(query)
+## .or(query)
 
 Метод для логического сложения условий нескольких выборок
 
@@ -1173,7 +1173,7 @@ getItems.or(range1).or(range2)
 
 <a name="Scorocode.Query+and"></a>
 
-## Query.and(query) 
+## .and(query) 
 Метод для логического умножения условий нескольких выборок
 
 
@@ -1218,7 +1218,7 @@ getItems.and(range).and(price)
 
 <a name="Scorocode.Query+select"></a>
 
-## Query.select() 
+## .select() 
 Метод для указания списка возвращаемых полей. 
 
 
@@ -1251,7 +1251,7 @@ data.select("price", "reward").find()
 
 <a name="Scorocode.Query+raw"></a>
 
-## Query.raw(filter) 
+## .raw(filter) 
 Прямой запрос к БД приложения
 
 
