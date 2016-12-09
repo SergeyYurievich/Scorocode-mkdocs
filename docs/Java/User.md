@@ -1,6 +1,6 @@
 <a name="User"></a>
 
-### User
+## User
 Класс для работы с пользователями приложения.
 
 **Содержание**
@@ -34,11 +34,11 @@ User appUser = new User();
 
 | Параметр  | Тип                              | Свойства     | Описание                         | Пример значения |
 | --------- | -------------------------------- | ------------ | -------------------------------- | --------------- |
-| username  | <code>String</code>              | Обязательный | Имя пользователя                 | "Username"                     | 
-| email     | <code>String</code>              | Обязательный | Email пользователя               | "user@domain.zone"          | 
-| password  | <code>String</code>              | Обязательный | Пароль пользователя              | "CorrectHorseBatteryStaple" |
-| documentContent  | <code>DocumentInfo</code>  | Необязательный | Документ, ассоциированный с пользователем | см.пример ниже |
-| callback  | <code>CallbackRegisterUser</code> | Обязательныйй | Callback, который будет вызван после выполнения запроса. | см.пример ниже  |
+| username  | `String`              | Обязательный | Имя пользователя                 | "Username"                     | 
+| email     | `String`              | Обязательный | Email пользователя               | "user@domain.zone"          | 
+| password  | `String`              | Обязательный | Пароль пользователя              | "CorrectHorseBatteryStaple" |
+| documentContent  | `DocumentInfo`  | Необязательный | Документ, ассоциированный с пользователем | см.пример ниже |
+| callback  | `CallbackRegisterUser` | Обязательныйй | Callback, который будет вызван после выполнения запроса. | см.пример ниже  |
 
 
 **Пример** 
@@ -73,10 +73,10 @@ user.register("any_username", "anyemail@mailinator.com", "test1111", doc.getDocu
 
 | Параметр  | Тип                              | Свойства     | Описание                         | Пример значения |
 | --------- | -------------------------------- | ------------ | -------------------------------- | --------------- |
-| username  | <code>String</code>              | Обязательный | Имя пользователя                 | "Jovan"                     | 
-| email     | <code>String</code>              | Обязательный | Email пользователя               | "user@domain.zone"          | 
-| password  | <code>String</code>              | Обязательный | Пароль пользователя              | "CorrectHorseBatteryStaple" |
-| callback  | <code>CallbackRegisterUser</code> | Обязательныйй | Callback, который будет вызван после выполнения запроса. |  см.пример ниже |
+| username  | `String`              | Обязательный | Имя пользователя                 | "Jovan"                     | 
+| email     | `String`              | Обязательный | Email пользователя               | "user@domain.zone"          | 
+| password  | `String`              | Обязательный | Пароль пользователя              | "CorrectHorseBatteryStaple" |
+| callback  | `CallbackRegisterUser` | Обязательныйй | Callback, который будет вызван после выполнения запроса. |  см.пример ниже |
 
 
 **Пример** 
@@ -107,9 +107,9 @@ user.register("any_username", "anyemail@gmail.com", "test1111", doc.getDocumentC
 
 | Параметр  | Тип                              | Свойства     | Описание                         | Пример значения |
 | --------- | -------------------------------- | ------------ | -------------------------------- | --------------- |
-| email     | <code>String</code>              | Обязательный | Email пользователя               | "user@domain.zone" | 
-| password  | <code>String</code>              | Обязательный | Пароль пользователя              | "CorrectHorseBatteryStaple" |
-| callback  | <code>CallbackLoginUser</code> |  | Коллбэк для выполняемого запроса |  см.пример ниже  | 
+| email     | `String`              | Обязательный | Email пользователя               | "user@domain.zone" | 
+| password  | `String`              | Обязательный | Пароль пользователя              | "CorrectHorseBatteryStaple" |
+| callback  | `CallbackLoginUser` |  | Коллбэк для выполняемого запроса |  см.пример ниже  | 
 
 
 **Пример** 
@@ -139,7 +139,7 @@ user.login(“anymail@mail.com”, “any pass”, new CallbackLoginUser() {
 
 | Параметр  | Тип                              | Свойства     | Описание                         | Пример значения |
 | --------- | -------------------------------- | ------------ | -------------------------------- | --------------- |
-| callback  | <code>CallbackLogoutUser</code> | Обязательный | Callback, который будет вызван после выполнения запроса.   |       см.пример ниже          | 
+| callback  | `CallbackLogoutUser` | Обязательный | Callback, который будет вызван после выполнения запроса.   |       см.пример ниже          | 
 
 
 **Пример** 

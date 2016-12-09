@@ -2,10 +2,10 @@
 
 ### WebSocket
 
-Для использования WebSocket в вашем проекте, вы можете воспользоваться библиотекой https://github.com/codebutler/android-websockets (или аналогичной), используя следующую схему url при инициализации WebSocket:
+Для использования WebSocket в вашем проекте, вы можете воспользоваться библиотекой <https://github.com/codebutler/android-websockets> (или аналогичной), используя следующую схему url при инициализации WebSocket:
 
 ```
-"wss://wss.scorocode.ru/{appID}/{wsKey}/{chanName}"
+wss://wss.scorocode.ru/{appID}/{wsKey}/{chanName}
 ```
 
 | Параметр  | Тип                              | Свойства | Описание                         | Пример значения |
@@ -16,7 +16,7 @@
 
 **Пример инициализации:**
 
-```
+```Java
 WebSocketClient client = new WebSocketClient(URI.create("wss://wss.scorocode.ru/a3d04e75e157b2f7ae20c2fce02f63d6/a3d04e75e157b2f7ae20c2fce02f63d6/chat_channel"), handler);
 ```
 
@@ -27,7 +27,7 @@ List<BasicNameValuePair> extraHeaders = Arrays.asList(
     new BasicNameValuePair("Cookie", "session=abcd");
 );
 
-WebSocketClient client = new WebSocketClient(URI.create("wss://wss.scorocode.ru/a3d04e75e157b2f7ae20c2fce02f63d6/b3asd4e75e1fds2f7ae20c2fce02f63d6/chat_channel), new WebSocketClient.Handler() {
+WebSocketClient client = new WebSocketClient(URI.create("wss://wss.scorocode.ru/a3d04e75e157b2f7ae20c2fce02f63d6/b3asd4e75e1fds2f7ae20c2fce02f63d6/chat_channel"), new WebSocketClient.Handler() {
     @Override
     public void onConnect() {
         Log.d(TAG, "Connected!");
@@ -57,6 +57,7 @@ WebSocketClient client = new WebSocketClient(URI.create("wss://wss.scorocode.ru/
 client.connect();
 
 // Позже…
+
 client.send("hello!");
 client.send(new byte[] { 0xDE, 0xAD, 0xBE, 0xEF });
 client.disconnect();

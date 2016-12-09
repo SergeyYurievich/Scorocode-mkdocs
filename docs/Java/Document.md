@@ -26,7 +26,7 @@
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| collection_name | <code>String</code> | Обязательное | имя коллекции в которой будет идти работа с документом | "Things" |
+| collection_name | `String` | Обязательное | имя коллекции в которой будет идти работа с документом | "Things" |
 
 **Пример** 
 ```Java
@@ -44,8 +44,8 @@ Document exampleItem = new Document("Items");
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| field | <code>String</code> | Обязательный | Название поля | "testcoll" |
-| value | <code>Object</code> | Обязательный  | Данные поля | "huNr3L7QDh" |
+| field | `String` | Обязательный | Название поля | "testcoll" |
+| value | `Object` | Обязательный  | Данные поля | "huNr3L7QDh" |
 
 **Пример** 
 ```Java
@@ -63,7 +63,7 @@ order.setField(“orderId”, “Ku128A439ads”);
 
 | Параметр | Тип                     | Свойства | Описание                         | Пример значения |
 | -------- | ----------------------- | -------- | -------------------------------- | --------------- |
-| callback | <code>CallbackDocumentSaved</code> | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
+| callback | `CallbackDocumentSaved` | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
 
 **Примеры** 
 
@@ -99,7 +99,7 @@ newDocument.saveDocument(new CallbackDocumentSaved() {
  document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
             @Override
             public void onDocumentFound(DocumentInfo documentInfo) {
-                //we found document and we can make changes in it and save it
+            //we found document and we can make changes in it and save it
             //...change document fields...
             //save  
                 document.saveDocument(new CallbackDocumentSaved() {
@@ -117,7 +117,7 @@ newDocument.saveDocument(new CallbackDocumentSaved() {
 
             @Override
             public void onDocumentNotFound(String errorCode, String errorMessage) {
-                //document not found. If we try to save document here
+            //document not found. If we try to save document here
             //new document will be upload to server as in example 2.1
             }
         });
@@ -132,8 +132,8 @@ newDocument.saveDocument(new CallbackDocumentSaved() {
 
 | Параметр | Тип                     | Свойства     | Описание                                                 | Пример значения |
 | -------- | ----------------------- | ------------ | -------------------------------------------------------- | --------------- |
-| documentId | <code>String</code>   | Обязательный | Значение поля id документа коллекции                     | "nV0p50CDKq"    | 
-| callback | <code>CallbackFindDocument</code> | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
+| documentId | `String`   | Обязательный | Значение поля id документа коллекции                     | "nV0p50CDKq"    | 
+| callback | `CallbackFindDocument` | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
 
 **Пример** 
 
@@ -163,7 +163,7 @@ document.getDocumentById("nV0p50CDKq", new CallbackFindDocument() {
 
 | Параметр | Тип                     | Свойства     | Описание                                                 | Пример значения |
 | -------- | ----------------------- | ------------ | -------------------------------------------------------- | --------------- |
-| field | <code>String</code>   | Обязательный | Имя поля документа                   | "name"    | 
+| field | `String`   | Обязательный | Имя поля документа                   | "name"    | 
 
 **Пример** 
 ```Java
@@ -184,10 +184,10 @@ String orderId = document.getField(“orderId”);
 
 | Параметр | Тип                     | Свойства     | Описание                                                 | Пример значения |
 | -------- | ----------------------- | ------------ | -------------------------------------------------------- | --------------- |
-| fieldName| <code>String</code>     | Обязательный | Имя поля документа типа File                    | "attachment"    | 
-| fileName | <code>String</code>   | Обязательный | Имя файла с раширением                     | "file.txt"    | 
-| contentToUploadInBase64 | <code>String</code>   | Обязательный | Контент файла в формате base64                     | "VEhJUyBJUyBGSUxFLUUtRS1FLUUtRS1FIQ=="    | 
-| callback | <code>CallbackUploadFile</code> | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
+| fieldName| `String`     | Обязательный | Имя поля документа типа File                    | "attachment"    | 
+| fileName | `String`   | Обязательный | Имя файла с раширением                     | "file.txt"    | 
+| contentToUploadInBase64 | `String`   | Обязательный | Контент файла в формате base64                     | "VEhJUyBJUyBGSUxFLUUtRS1FLUUtRS1FIQ=="    | 
+| callback | `CallbackUploadFile` | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
 
 **Пример** 
 ```Java
@@ -229,8 +229,8 @@ document.getDocumentById("nV0p50CDKq", new CallbackFindDocument() {
 
 | Параметр | Тип                     | Свойства     | Описание                                                 | Пример значения |
 | -------- | ----------------------- | ------------ | -------------------------------------------------------- | --------------- |
-| fieldName| <code>String</code>     | Обязательный | Имя поля документа типа File                    | "attachment"    | 
-| fileName | <code>String</code>   | Обязательный | Имя файла с раширением                     | "file.txt"    | 
+| fieldName| `String`     | Обязательный | Имя поля документа типа File                    | "attachment"    | 
+| fileName | `String`   | Обязательный | Имя файла с раширением                     | "file.txt"    | 
 
 **Пример** 
 ```Java
@@ -258,9 +258,9 @@ documentWithFile.getDocumentById("nV0p50CDKq", new CallbackFindDocument() {
 
 | Параметр | Тип                     | Свойства     | Описание                                                 | Пример значения |
 | -------- | ----------------------- | ------------ | -------------------------------------------------------- | --------------- |
-| fieldName| <code>String</code>     | Обязательный | Имя поля документа типа File                    | "attachment"    | 
-| fileName | <code>String</code>   | Обязательный | Имя файла с раширением                     | "file.txt"    | 
-| callback | <code>CallbackDeleteFile</code> | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
+| fieldName| `String`     | Обязательный | Имя поля документа типа File                    | "attachment"    | 
+| fileName | `String`   | Обязательный | Имя файла с раширением                     | "file.txt"    | 
+| callback | `CallbackDeleteFile` | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
 
 **Пример** 
 ```Java
@@ -301,7 +301,7 @@ document.getDocumentById("nV0p50CDKq", new CallbackFindDocument() {
 
 | Параметр | Тип                     | Свойства     | Описание                                                 | Пример значения |
 | -------- | ----------------------- | ------------ | -------------------------------------------------------- | --------------- |
-| callback | <code>CallbackRemoveDocument</code> | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
+| callback | `CallbackRemoveDocument` | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
 
 **Пример** 
 ```Java

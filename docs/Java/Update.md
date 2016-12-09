@@ -1,6 +1,6 @@
 <a name="Update"></a>
 
-### Update
+## Update
 Класс для обновления полей документа из БД
 
 **Содержание**
@@ -48,8 +48,8 @@ Document document = new Document("ordersCollection");
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| field | <code>String</code> |                                            Обязательный | Имя поля для изменения  | "orderNumber"   |
-| value | <code>Object</code> | Обязательный |  Новое значение поля |  22 |
+| field | `String` |                                            Обязательный | Имя поля для изменения  | "orderNumber"   |
+| value | `Object` | Обязательный |  Новое значение поля |  22 |
 
 
 **Пример**
@@ -97,8 +97,8 @@ document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| field | <code>String</code> |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
-| value | <code>Object</code> | Обязательный | Элемент для добавления в массив | -42.42 |
+| field | `String` |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
+| value | `Object` | Обязательный | Элемент для добавления в массив | -42.42 |
 
 **Пример**
 ```Java
@@ -143,7 +143,7 @@ document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| field | <code>String</code> |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
+| field | `String` |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
 
 **Пример**
 ```Java
@@ -188,7 +188,7 @@ document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| field | <code>String</code> |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
+| field | `String` |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
 
 
 **Пример**
@@ -234,11 +234,11 @@ document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| field | <code>String</code> |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
-| value | <code>Object</code> | Обязательный | Элемент для удаления из массива | "delete me" |
+| field | `String` |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
+| value | `Object` | Обязательный | Элемент для удаления из массива | "delete me" |
 
-**Примечание**
-* если в массиве несколько элементов со значением, соответствующим значению value, данный метод удалит все эти элементы.
+!!! note "Примечание"
+    Если в массиве несколько элементов со значением, соответствующим значению value, данный метод удалит все эти элементы.
 
 **Пример**
 ```Java
@@ -279,8 +279,8 @@ document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| field | <code>String</code> |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
-| value | <code>List&ltObject&gt</code> | Обязательный | Элементы для удаления из массива | см. пример ниже |
+| field | `String` |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
+| value | `List<Object>` | Обязательный | Элементы для удаления из массива | см. пример ниже |
 
 
 **Пример**
@@ -329,8 +329,8 @@ document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| field | <code>String</code> |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
-| value | <code>List&ltObject&gt</code> | Обязательный | Элементы для добавления в массив | см. пример ниже |
+| field | `String` |                                            Обязательный | Имя поля типа Array  | "orderNumber"   |
+| value | `List<Object>` | Обязательный | Элементы для добавления в массив | см. пример ниже |
 
 
 **Пример**
@@ -372,8 +372,8 @@ document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| field | <code>String</code> |                                            Обязательный | Имя поля  | "counter"   |
-| value | <code>Integer / Double / Date</code> | Обязательный | Шаг изменения | -2.2 |
+| field | `String` |                                            Обязательный | Имя поля  | "counter"   |
+| value | `Integer / Double / Date` | Обязательный | Шаг изменения | -2.2 |
 
 **Пример**
 ```Java
@@ -416,7 +416,7 @@ document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| field | <code>String</code> |                                            Обязательный | Имя поля типа Date  | "registerDate"   |
+| field | `String` |                                            Обязательный | Имя поля типа Date  | "registerDate"   |
 
 
 **Пример**
@@ -460,8 +460,8 @@ document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
 
 | Параметр | Тип | Свойства | Описание | Пример значения |
 | --- | --- | --- | --- | --- |
-| field | <code>String</code> |                                            Обязательный | Имя поля  | "counter"   |
-| value | <code>Integer / Double</code> | Обязательный | Мультипликатор | -2.2 |
+| field | `String` |                                            Обязательный | Имя поля  | "counter"   |
+| value | `Integer / Double` | Обязательный | Мультипликатор | -2.2 |
 
 
 **Пример**
@@ -504,8 +504,8 @@ document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
 
 | Параметр   | Тип              | Свойства     | Описание                             | Пример значения                       |
 |------------|------------------|--------------|--------------------------------------|---------------------------------------|
-| field           |<code>String</code>         | Обязательный |  Имя поля, значение которого нужно изменить  | "price" |
-| valueToCompare        | <code>Integer / Double</code>      | Обязательный | значение для сравнения с текущим значением поля | 43    |
+| field           |`String`         | Обязательный |  Имя поля, значение которого нужно изменить  | "price" |
+| valueToCompare        | `Integer / Double`      | Обязательный | значение для сравнения с текущим значением поля | 43    |
 
 **Пример**
 ```Java
@@ -547,8 +547,8 @@ document.getDocumentById("KH3JCojAyT", new CallbackFindDocument() {
 
 | Параметр   | Тип              | Свойства     | Описание                             | Пример значения                       |
 |------------|------------------|--------------|--------------------------------------|---------------------------------------|
-| field           |<code>String</code>         | Обязательный |  Имя поля, значение которого нужно изменить  | "price" |
-| valueToCompare        | <code>Integer / Double</code>      | Обязательный | значение для сравнения с текущим значением поля | 43    |
+| field           |`String`         | Обязательный |  Имя поля, значение которого нужно изменить  | "price" |
+| valueToCompare        | `Integer / Double`      | Обязательный | значение для сравнения с текущим значением поля | 43    |
 
 **Пример**
 ```Java

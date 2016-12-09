@@ -1,6 +1,6 @@
 <a name="Script"></a>
 
-### Script
+## Script
 Класс для работы с серверными скриптами.
 
 **Содержание**
@@ -26,12 +26,13 @@ Script script = new Script();
 
 | Параметр  | Тип                              | Свойства | Описание                         | Пример значения |
 | --------- | -------------------------------- | -------- | -------------------------------- | --------------- |
-| scriptId	        | <code>String</code>	            | Обязательный	 | Идентификатор скрипта	                             | "57e1503b48e5f54441189790" |
-| dataPoolForScript	| <code>Object</code>	            | Необязательный | Объект, содержащий параметры скрипта для выполнени    | см.пример ниже |
-| callback	        | <code>CallbackRunScript</code> 	| Обязательный	 | Callback, который будет вызван после выполнения запроса.	| см.пример ниже |
+| scriptId	        | `String`	            | Обязательный	 | Идентификатор скрипта	                             | "57e1503b48e5f54441189790" |
+| dataPoolForScript	| `Object`	            | Необязательный | Объект, содержащий параметры скрипта для выполнени    | см.пример ниже |
+| callback	        | `CallbackRunScript` 	| Обязательный	 | Callback, который будет вызван после выполнения запроса.	| см.пример ниже |
 
-**Примечание**
-* объект dataPoolForScript будет сериализован в json при помощи парсера Google Gson. Если у вас возникли вопросы по передаче параметров в скрипт обратитесь к официальной документации https://github.com/google/gson
+!!! note "Примечание"
+    Объект `dataPoolForScript` будет сериализован в JSON при помощи парсера Google Gson. Если у вас возникли проблемы при передаче параметров в скрипт - обратитесь к официальной документации <https://github.com/google/gson>
+
 
 **Пример**
 ```Java
@@ -44,7 +45,7 @@ dataPool.put(“val”,”anyInfo”);
 script.runScript("57e1503b48e5f54441189790", dataPool, new CallbackRunScript() {
             @Override
             public void onScriptSended() {
-                //script sended and  runed
+                //script sended and runned
             }
 
             @Override
@@ -63,11 +64,11 @@ script.runScript("57e1503b48e5f54441189790", dataPool, new CallbackRunScript() {
 
 | Параметр  | Тип                              | Свойства | Описание                         | Пример значения |
 | --------- | -------------------------------- | -------- | -------------------------------- | --------------- |
-| scriptId	        | <code>String</code>	            | Обязательный	 | Идентификатор скрипта	                             | "57e1503b48e5f54441189790" |
-| callback	        | <code>CallbackRunScript</code> 	| Обязательный	 | Callback, который будет вызван после выполнения запроса.	| см.пример ниже |
+| scriptId	        | `String`	            | Обязательный	 | Идентификатор скрипта	                             | "57e1503b48e5f54441189790" |
+| callback	        | `CallbackRunScript` 	| Обязательный	 | Callback, который будет вызван после выполнения запроса.	| см.пример ниже |
 
-**Примечание**
-* объект dataPoolForScript будет сериализован в json при помощи парсера Google Gson. Если у вас возникли вопросы по передаче параметров в скрипт обратитесь к официальной документации https://github.com/google/gson
+!!! note "Примечание"
+    Объект `dataPoolForScript` будет сериализован в JSON при помощи парсера Google Gson. Если у вас возникли проблемы при передаче параметров в скрипт - обратитесь к официальной документации <https://github.com/google/gson>
 
 **Пример**
 ```Java
@@ -75,7 +76,7 @@ Script script = new Script();
 script.runScript("57e1503b48e5f54441189790", new CallbackRunScript() {
             @Override
             public void onScriptSended() {
-                //script sended and  runed
+                //script sended and runned
             }
 
             @Override
