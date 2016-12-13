@@ -22,7 +22,7 @@
     "content"     : ""  // т
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -42,7 +42,7 @@
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -81,7 +81,7 @@ https://api.scorocode.ru/api/v1/getfile/{app}/{coll}/{field}/{docId}/{file}
     {file}    - имя файла, обязательный
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -99,7 +99,7 @@ https://api.scorocode.ru/api/v1/getfile/{app}/{coll}/{field}/{docId}/{file}
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X GET -H "Content-Type: application/json" "https://api.scorocode.ru/api/v1/getfile/db8a1b41b8543397a798a181d9891b4c/items/attachment/Y3bET236FX/file.txt"
@@ -128,7 +128,7 @@ curl -X GET -H "Content-Type: application/json" "https://api.scorocode.ru/api/v1
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -148,7 +148,7 @@ curl -X GET -H "Content-Type: application/json" "https://api.scorocode.ru/api/v1
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{

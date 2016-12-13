@@ -20,7 +20,7 @@
 
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -40,7 +40,7 @@
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{

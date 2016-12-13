@@ -12,11 +12,11 @@
 {
     "app": "",     // идентификатор приложения, обязательный
     "cli": "",     // клиентский ключ, обязательный
-    "acc": "",     // ключ доступа, обязательный, только masterKey
+    "acc": ""      // ключ доступа, обязательный, только masterKey
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -465,7 +465,7 @@
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -491,10 +491,10 @@ curl -X POST -H "Content-Type: application/json" -d '{
 {
     "app": "",     // идентификатор приложения, обязательный
     "cli": "",     // клиентский ключ, обязательный
-    "acc": "",     // ключ доступа, обязательный, только masterKey
+    "acc": ""      // ключ доступа, обязательный, только masterKey
 }
 ```
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -883,7 +883,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -910,10 +910,11 @@ curl -X POST -H "Content-Type: application/json" -d '{
     "app": "",     // идентификатор приложения, обязательный
     "cli": "",     // клиентский ключ, обязательный
     "acc": "",     // ключ доступа, обязательный, только masterKey
-    "coll": "",    // имя коллекции, обязательный
+    "coll": ""     // имя коллекции, обязательный
 }
 ```
-### Ответы:
+
+**Ответы:**
 
 *Выполнено*
 
@@ -1050,7 +1051,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -1085,7 +1086,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
     }
 }
 ```
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -1195,7 +1196,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -1249,7 +1250,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
     }
 }
 ```
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -1359,7 +1360,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -1390,12 +1391,12 @@ curl -X POST -H "Content-Type: application/json" -d '{
     "cli": "",               // клиентский ключ, обязательный
     "acc": "",               // ключ доступа, обязательный, только masterKey
     "collection": {
-        "id": "",            // id коллекции, обязательный           
+        "id": ""             // id коллекции, обязательный           
     }
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -1415,7 +1416,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -1451,7 +1452,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -1547,7 +1548,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -1591,7 +1592,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -1611,7 +1612,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -1655,7 +1656,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -1675,7 +1676,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -1715,7 +1716,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -1743,7 +1744,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -1783,7 +1784,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -1952,7 +1953,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -2013,7 +2014,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -2063,7 +2064,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -2102,7 +2103,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -2142,7 +2143,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -2174,7 +2175,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -2194,7 +2195,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -2226,7 +2227,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -2246,7 +2247,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -2278,7 +2279,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -2291,7 +2292,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
     "name": "AYBABTU.js",
     "path": "/AYBABTU.js",
     "description": "",
-    "code": "console.log(\"All your base are belong to us\");",
+    "code": "console.log(\"QWxsIHlvdXIgYmFzZSBhcmUgYmVsb25nIHRvIHVz\");",
     "jobStartAt": "2016-12-12T17:33:00+03:00",
     "isActiveJob": false,
     "jobType": "once",
@@ -2332,7 +2333,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -2357,17 +2358,17 @@ curl -X POST -H "Content-Type: application/json" -d '{
 
 ```
 {
-    "app": "",                  // идентификатор приложения, обязательный
-    "cli": "",                  // клиентский ключ, обязательный
-    "acc": "",                  // ключ доступа, обязательный, только masterKey
+    "app": "",                    // идентификатор приложения, обязательный
+    "cli": "",                    // клиентский ключ, обязательный
+    "acc": "",                    // ключ доступа, обязательный, только masterKey
     "cloudCode": {
-        "path": ""              // полный путь и название скрипта, обязательный
-        "description": "",      // описание, необязательный
-        "code": "",             // код скрипта, необязательный
-        "jobStartAt": datetime, // время начала работы таймера, необязательный
-        "isActiveJob": bool,    // флаг активности таймера, необязательный
-        "jobType": ""           // тип таймера, необязательный, custom || daily || monthly
-        "repeat": {             // настройки таймера, необязательный
+        "path": ""                // полный путь и название скрипта, обязательный
+        "description": "",        // описание, необязательный
+        "code": "",               // код скрипта, необязательный
+        "jobStartAt": "datetime", // время начала работы таймера, необязательный
+        "isActiveJob": bool,      // флаг активности таймера, необязательный
+        "jobType": "",            // тип таймера, необязательный, custom || daily || monthly
+        "repeat": {               // настройки таймера, необязательный
             "custom": {
                 "days": int,
                 "hours": int,
@@ -2386,11 +2387,12 @@ curl -X POST -H "Content-Type: application/json" -d '{
                 "minutes": int
             }
         }
-        "ACL": []               // настройки ACL скрипта, необязательный, массив id пользователей или "*" для разрешения анонимного доступа
+        "ACL": []                 // настройки ACL скрипта, необязательный, массив id пользователей или "*" для разрешения анонимного доступа
+    }
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -2398,36 +2400,28 @@ curl -X POST -H "Content-Type: application/json" -d '{
 {
   "error": false,
   "script": {
-    "_id": "584eb7c47e0b4e222480a4a9",
+    "_id": "584fad1422a5482feb5b31ab",
     "appId": "584e64f8982fd55332741516",
-    "name": "script2.js",
-    "path": "/script2.js",
-    "description": "",
-    "code": "",
-    "jobStartAt": "0001-01-01T00:00:00Z",
+    "name": "AYBABTU.js",
+    "path": "/AYBABTU.js",
+    "description": "All your base",
+    "code": "console.log(\"QWxsIHlvdXIgYmFzZSBhcmUgYmVsb25nIHRvIHVz\");",
+    "jobStartAt": "2016-12-13T17:33:00+03:00",
     "isActiveJob": false,
-    "jobType": "once",
+    "jobType": "custom",
     "repeat": {
       "custom": {
         "days": 0,
         "hours": 0,
-        "minutes": 0
+        "minutes": 5
       },
-      "daily": {
-        "on": [],
-        "hours": 0,
-        "minutes": 0
-      },
-      "monthly": {
-        "on": [],
-        "days": [],
-        "lastDate": false,
-        "hours": 0,
-        "minutes": 0
-      }
+      "daily": null,
+      "monthly": null
     },
     "nextRun": "0001-01-01T00:00:00Z",
-    "ACL": []
+    "ACL": [
+      "*"
+    ]
   }
 }
 ```
@@ -2442,7 +2436,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -2450,7 +2444,20 @@ curl -X POST -H "Content-Type: application/json" -d '{
     "app": "48f172923acd719b42c73ac3a492cfc8",
     "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
     "cloudCode": {
-        "path": "/newscript.js"
+        "path": "/AYBABTU.js",
+        "description": "All your base",      
+        "code": "console.log(\"QWxsIHlvdXIgYmFzZSBhcmUgYmVsb25nIHRvIHVz\");",             
+        "jobStartAt": "2016-12-13T17:33:00+03:00", 
+        "isActiveJob": false,    
+        "jobType": "custom",           
+        "repeat": {             
+            "custom": {
+                "days": 0,
+                "hours": 0,
+                "minutes": 5
+            }
+        },
+        "ACL": ["*"]
     }
 }' "https://api.scorocode.ru/api/v1/app/scripts/create"
 ```
@@ -2474,9 +2481,9 @@ curl -X POST -H "Content-Type: application/json" -d '{
     "app": "",                  // идентификатор приложения, обязательный
     "cli": "",                  // клиентский ключ, обязательный
     "acc": "",                  // ключ доступа, обязательный, только masterKey
-    "script": "script ID",
+    "script": "",               // идентификатор скрипта, обязательный
     "cloudCode": {
-        "path": ""              // полный путь и название скрипта, обязательный
+        "path": ""              // полный путь и название скрипта, необязательный
         "description": "",      // описание, необязательный
         "code": "",             // код скрипта, необязательный
         "jobStartAt": datetime, // время начала работы таймера, необязательный
@@ -2500,17 +2507,44 @@ curl -X POST -H "Content-Type: application/json" -d '{
                 "hours": int,
                 "minutes": int
             }
-        }
+        },
         "ACL": []               // настройки ACL скрипта, необязательный, массив id пользователей или "*" для разрешения анонимного доступа
+    }
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
 ```
-
+{
+  "error": false,
+  "script": {
+    "_id": "584fad1422a5482feb5b31ab",
+    "appId": "584e64f8982fd55332741516",
+    "name": "AYBABTU.js",
+    "path": "/AYBABTU.js",
+    "description": "All your base",
+    "code": "console.log(\"QWxsIHlvdXIgYmFzZSBhcmUgYmVsb25nIHRvIHVz\");",
+    "jobStartAt": "2016-12-13T17:33:00+03:00",
+    "isActiveJob": true,
+    "jobType": "custom",
+    "repeat": {
+      "custom": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 5
+      },
+      "daily": null,
+      "monthly": null
+    },
+    "nextRun": "0001-01-01T00:00:00Z",
+    "ACL": [
+      "*"
+    ]
+  }
+}
 ```
 
 *Ошибка*
@@ -2523,14 +2557,18 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
-        "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
-        "app": "48f172923acd719b42c73ac3a492cfc8",
-        "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
-
+    "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
+    "app": "48f172923acd719b42c73ac3a492cfc8",
+    "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
+    "script": "584fad1422a5482feb5b31ab",
+    "cloudCode": {
+        "isActiveJob": true    
+    }
+}' "https://api.scorocode.ru/api/v1/app/scripts/update"
 ```
 
 -------------------------------------------------------------------------------------
@@ -2550,16 +2588,18 @@ curl -X POST -H "Content-Type: application/json" -d '{
     "app": "",               // идентификатор приложения, обязательный
     "cli": "",               // клиентский ключ, обязательный
     "acc": "",               // ключ доступа, обязательный, только masterKey
-    "script": "script ID"
+    "script": ""             // идентификатор скрипта, обязательный
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
 ```
-
+{
+  "error": false
+}
 ```
 
 *Ошибка*
@@ -2572,14 +2612,15 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
-        "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
-        "app": "48f172923acd719b42c73ac3a492cfc8",
-        "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
-
+    "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
+    "app": "48f172923acd719b42c73ac3a492cfc8",
+    "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
+    "script": "584fad1422a5482feb5b31ab"
+}' "https://api.scorocode.ru/api/v1/app/scripts/delete"
 ```
 
 -------------------------------------------------------------------------------------
@@ -2598,16 +2639,28 @@ curl -X POST -H "Content-Type: application/json" -d '{
 {
     "app": "",               // идентификатор приложения, обязательный
     "cli": "",               // клиентский ключ, обязательный
-    "acc": "",               // ключ доступа, обязательный, только masterKey
+    "acc": ""               // ключ доступа, обязательный, только masterKey
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
 ```
-
+{
+  "error": false,
+  "items": [
+    {
+      "_id": "584fb8710c62722cf9fe2617",
+      "name": "botobot",
+      "botId": "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11",
+      "appId": "584e64f8982fd55332741516",
+      "scriptId": "584fb52f0c62722cf9fe2604",
+      "isActive": false
+    }
+  ]
+}
 ```
 
 *Ошибка*
@@ -2620,21 +2673,21 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
-        "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
-        "app": "48f172923acd719b42c73ac3a492cfc8",
-        "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
-
+    "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
+    "app": "48f172923acd719b42c73ac3a492cfc8",
+    "cli": "d6859f41223c9997ff78c6b4vb3a96bb"
+}' "https://api.scorocode.ru/api/v1/bots"
 ```
 
 -------------------------------------------------------------------------------------
 
 ## Создание бота
 
-**https://api.scorocode.ru/api/v1/app/bots/create**
+**https://api.scorocode.ru/api/v1/bots/create**
 
 Метод: `POST`
 
@@ -2648,20 +2701,30 @@ curl -X POST -H "Content-Type: application/json" -d '{
     "cli": "",               // клиентский ключ, обязательный
     "acc": "",               // ключ доступа, обязательный, только masterKey
     "bot": {
-        "name": "bot name",
-        "botId": "Telegram bot ID",
-        "scriptId": "handler script ID",
-        "isActive": bool
+        "name": "",          // имя бота, обязательный
+        "botId": "",         // телеграм-токен бота, полученный от Botfather, обязательный 
+        "scriptId": "",      // идентификатор серверного скрипта, обязательный
+        "isActive": bool     // флаг активности бота, необязательный
     }
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
 ```
-
+{
+  "bot": {
+    "_id": "584fb8710c62722cf9fe2617",
+    "name": "botobot",
+    "botId": "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11",
+    "appId": "584e64f8982fd55332741516",
+    "scriptId": "584fb52f0c62722cf9fe2604",
+    "isActive": false
+  },
+  "error": false
+}
 ```
 
 *Ошибка*
@@ -2674,21 +2737,27 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
-        "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
-        "app": "48f172923acd719b42c73ac3a492cfc8",
-        "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
-
+    "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
+    "app": "48f172923acd719b42c73ac3a492cfc8",
+    "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
+    "bot":{
+        "name":"botobot",
+        "isActive":false,
+        "botId":"123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11",
+        "scriptId":"584fb52f0c62722cf9fe2604"
+    }
+}' "https://api.scorocode.ru/api/v1/bots/create"
 ```
 
 -------------------------------------------------------------------------------------
 
 ## Изменение бота
 
-**https://api.scorocode.ru/api/v1/app/bots/update**
+**https://api.scorocode.ru/api/v1/bots/update**
 
 Метод: `POST`
 
@@ -2702,21 +2771,31 @@ curl -X POST -H "Content-Type: application/json" -d '{
     "cli": "",               // клиентский ключ, обязательный
     "acc": "",               // ключ доступа, обязательный, только masterKey
     "bot": {
-        "_id": "bot ID",
-        "name": "bot name",
-        "botId": "Telegram bot ID",
-        "scriptId": "handler script ID",
-        "isActive": bool
+        "_id": "",           // идентификатор бота, обязательный
+        "name": "",          // имя бота, необязательный
+        "botId": "",         // телеграм-токен бота, полученный от Botfather, необязательный 
+        "scriptId": "",      // идентификатор серверного скрипта, необязательный
+        "isActive": bool     // флаг активности бота, необязательный
     }
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
 ```
-
+{
+  "bot": {
+    "_id": "584fbd067e0b4e222480a7e4",
+    "name": "botobot",
+    "botId": "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew12",
+    "appId": "584e64f8982fd55332741516",
+    "scriptId": "584fb52f0c62722cf9fe2604",
+    "isActive": false
+  },
+  "error": false
+}
 ```
 
 *Ошибка*
@@ -2729,14 +2808,22 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
-        "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
-        "app": "48f172923acd719b42c73ac3a492cfc8",
-        "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
-
+    "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
+    "app": "48f172923acd719b42c73ac3a492cfc8",
+    "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
+    "bot": {
+        "_id": "584fbd067e0b4e222480a7e4",
+        "name": "botobot",
+        "botId": "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew12",
+        "appId": "584e64f8982fd55332741516",
+        "scriptId": "584fb52f0c62722cf9fe2604",
+        "isActive": false
+    }
+}' "https://api.scorocode.ru/api/v1/bots/update"
 ```
 
 -------------------------------------------------------------------------------------
@@ -2757,17 +2844,19 @@ curl -X POST -H "Content-Type: application/json" -d '{
     "cli": "",               // клиентский ключ, обязательный
     "acc": "",               // ключ доступа, обязательный, только masterKey
     "bot": {
-        "_id": "bot ID"
+        "_id": ""            // идентификатор бота, обязательный
     }
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
 ```
-
+{
+  "error": false
+}
 ```
 
 *Ошибка*
@@ -2780,12 +2869,15 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
-        "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
-        "app": "48f172923acd719b42c73ac3a492cfc8",
-        "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
-
+    "acc": "ffe86fefg25fbklacsdee8cd4c59644a",
+    "app": "48f172923acd719b42c73ac3a492cfc8",
+    "cli": "d6859f41223c9997ff78c6b4vb3a96bb",
+    "bot": {
+        "_id": "584fbd067e0b4e222480a7e4"
+    }
+}' "https://api.scorocode.ru/api/v1/bots/delete"
 ```

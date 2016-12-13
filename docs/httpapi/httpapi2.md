@@ -19,7 +19,7 @@
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -40,7 +40,7 @@
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -82,7 +82,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
     Удаляет не более 1000 документов
 
 
-### Ответы:
+**Ответы:**
 *Выполнено*
 
 ```
@@ -105,7 +105,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -148,7 +148,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 !!! warning "Ограничения" 
     Изменяет не более 1000 документов
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -173,7 +173,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -218,7 +218,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -239,7 +239,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -290,7 +290,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 !!! warning "BSON" 
     Для повышения производительности сервиса результат выборки метода **find** возвращается в формате [bson](https://ru.wikipedia.org/wiki/BSON). Все SDK самостоятельно реализуют декодирование bson в json.
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -311,7 +311,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -354,7 +354,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -375,7 +375,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{

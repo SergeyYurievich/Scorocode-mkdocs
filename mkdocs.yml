@@ -13,7 +13,7 @@ pages:
         - 'Серверный код приложения': 'app/app5.md'
         - 'Настройки приложения': 'app/app6.md'
     - 'HTTP API': 
-        - 'Общее описание протокола': 'httpapi/httpapi.md'
+        - 'Работа с приложением': 'httpapi/appapi.md'
         - 'Пользователи': 'httpapi/httpapi1.md'
         - 'Данные': 'httpapi/httpapi2.md'
         - 'Файлы': 'httpapi/httpapi3.md'

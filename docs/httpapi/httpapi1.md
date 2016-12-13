@@ -20,7 +20,7 @@
 }
 ```
 
-### Ответы:
+**Ответы:**
 
 *Выполнено*
 
@@ -40,7 +40,7 @@
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -76,7 +76,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы
+**Ответы:**
 
 *Выполнено*
 
@@ -100,7 +100,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{
@@ -129,7 +129,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Ответы
+**Ответы:**
 
 *Выполнено*
 
@@ -149,7 +149,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }
 ```
 
-### Пример cURL
+**Пример cURL**
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{

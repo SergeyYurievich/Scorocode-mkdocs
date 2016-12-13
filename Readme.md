@@ -1,3 +1,4 @@
 # Репозиторий переезда Scorocode/scorocode-docs на mkdocs
 
-Тема документации - https://github.com/squidfunk/mkdocs-material (бранч rework)
+## Ведутся работы
+![Robots](http://leproimg.com/2528006.gif)
