@@ -1,7 +1,6 @@
 <a name="SCUpdate"></a>
 
 ## SCUpdate
-SCUpdate
 
 **Содержание**
 
@@ -24,7 +23,7 @@ SCUpdate
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <a name="SCUpdate+addOperator"></a> 
 
-## .addOperator(name, oper)
+### .addOperator(name, oper)
 
 Метод для передачи SCUpdate оператора для изменения данных
 
@@ -45,7 +44,7 @@ update.addOperator(currentDate)
 
 <a name="SCUpdate+set"></a>
 
-## .set(dic: [String: SCValue])
+### .set(dic: [String: SCValue])
 Метод для передачи данных объекту
 
 **Тип**: Метод <code>[SCUpdate](#SCUpdate)</code>  
@@ -64,7 +63,7 @@ update.set(["fieldName": SCString("A")])
 
 <a name="SCUpdate+push"></a>
 
-## .push(name: String, _ value: SCValue))
+### .push(name: String, _ value: SCValue))
 Метод для добавления элемента в массив.
 
 **Тип**: Метод <code>[SCUpdate](#SCUpdate)</code>  
@@ -87,7 +86,7 @@ update.save()
 
 <a name="SCUpdate+pushEach"></a>
 
-## .pushEach(name: String, _ value: SCValue))
+### .pushEach(name: String, _ value: SCValue))
 Метод для добавления нескольких элементов в массив.
 
 **Тип**: Метод <code>[SCUpdate](#SCUpdate)</code>  
@@ -108,7 +107,7 @@ update.pushEach("fieldName", SCArray([SCString("A")]))
 
 <a name="SCUpdate+pull"></a>
 
-## .pull(name: String, _ value: SCPullable)
+### .pull(name: String, _ value: SCPullable)
 Метод для удаления всех элементов массива, значение которых равно указанному.
 
 **Тип**: Метод <code>[Object](#SCUpdate)</code>  
@@ -130,7 +129,7 @@ update.pull("fieldName", SCString("A"))
 
 <a name="SCUpdate+pullAll"></a>
 
-## .pullAll(name: String, _ value: SCValue)
+### .pullAll(name: String, _ value: SCValue)
 
 Метод для удаления всех элементов массива, значения которых равны одному из указанных значений.
 
@@ -151,7 +150,7 @@ update.pullAll("fieldName", SCArray([SCString("A")]))
 
 <a name="SCUpdate+addToSet"></a>
 
-## .addToSet(name: String, _ value: SCValue)
+### .addToSet(name: String, _ value: SCValue)
 Метод для добавления элемента в массив только в том случае, если в массиве отсутствуют элементы с таким значением.
 
 **Тип**: Метод <code>[SCUpdate](#SCUpdate)</code>  
@@ -172,7 +171,7 @@ update.addToSet("fieldName", SCString("A"))
 
 <a name="SCUpdate+addToSetEach"></a>
 
-## .addToSetEach(name: String, _ value: SCValue)
+### .addToSetEach(name: String, _ value: SCValue)
 Метод для добавления элементов в массив только в том случае, если в массиве отсутствуют элементы с таким значением.
 
 **Тип**: Метод <code>[SCUpdate](#SCUpdate)</code>  
@@ -192,7 +191,7 @@ update.addToSetEach("fieldName", SCArray(SCString("A"))
 
 <a name="SCUpdate+pop"></a>
 
-## .pop(name: String, _ value: Int)
+### .pop(name: String, _ value: Int)
 Метод для удаления первого или последнего элемента массива
 
 **Тип**: Метод <code>[SCUpdate](#SCUpdate)</code>  
@@ -213,7 +212,7 @@ update.pop("fieldName", 1)
 
 <a name="SCUpdate+inc"></a>
 
-## .inc(name: String, _ value: SCValue)
+### .inc(name: String, _ value: SCValue)
 Метод увеличивает значение числового поля на заданное число
 
 **Тип**: Метод <code>[SCUpdate](#SCUpdate)</code>  
@@ -234,7 +233,7 @@ update.inc("fieldName", SCInt(1))
 
 <a name="SCUpdate+currentDate"></a>
 
-## .currentDate(name: String, typeSpec: String)
+### .currentDate(name: String, typeSpec: String)
 Устанавливает текущее время в качестве значения поля
 
 **Тип**: Метод <code>[SCUpdate](#SCUpdate)</code>  
@@ -255,7 +254,7 @@ update.currentDate("fieldName", typeSpec: "date")
 
 <a name="SCUpdate+mul"></a>
 
-## .mul(name: String, _ value: SCValue)
+### .mul(name: String, _ value: SCValue)
 Метод умножает значение числового поля на заданное число
 
 **Тип**: Метод <code>[SCUpdate](#SCUpdate)</code>  
@@ -275,7 +274,7 @@ update.mul("fieldName", SCInt(5))
 
 <a name="SCUpdate+min"></a>
 
-## .min(name: String, _ value: SCValue)
+### .min(name: String, _ value: SCValue)
 Метод обновляет значение числового поля только в случае, если новое значение меньше текущего значения поля
 
 **Тип**: Метод <code>[SCUpdate](#SCUpdate)</code>  
@@ -297,7 +296,7 @@ update.min("fieldName", SCInt(5))
 
 <a name="SCUpdate+max"></a>
 
-## .max(name: String, _ value: SCValue)
+### .max(name: String, _ value: SCValue)
 Метод обновляет значение числового поля только в случае, если новое значение больше текущего значения поля
 
 **Тип**: Метод <code>[SCUpdate](#SCUpdate)</code>  

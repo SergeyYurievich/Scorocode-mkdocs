@@ -351,7 +351,7 @@ editItem.pushEach("location", SCArray([SCString("Sierra Army Depot"), SCString("
 
 <a name="SCObject+pullAll"></a>
 
-### SCObject.pullAll(name, _ value)
+### .pullAll(name, _ value)
 
 Метод для удаления всех элементов массива, значения которых равны одному из указанных значений.
 

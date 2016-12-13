@@ -1,8 +1,7 @@
 site_name: 'Документация Scorocode'
 pages:
-    - 'О документации': 'index.md'
     - 'Scorocode': 
-        - 'Общие сведения': 'main/main.md'
+        - 'Общие сведения': 'index.md'
         - 'Начало работы': 'main/main1.md'
         - 'Личный кабинет': 'main/main2.md'
         - 'Работа с приложением': 'app/app.md'
@@ -54,11 +53,16 @@ pages:
         - 'Пример Storehouse': 'Java/Storehouse.md'
 theme_dir: 'material'
 extra:
-  logo: 'img/Logo.png'
+  logo: 'logo.png'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  i18n:
+    prev: 'Предыдущий раздел'
+    next: 'Следующий раздел'
   palette:
     primary: 'blue'
     accent: 'light blue'
-
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.codehilite(guess_lang=false)
