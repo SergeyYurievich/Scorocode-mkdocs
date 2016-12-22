@@ -50,7 +50,8 @@ pages:
         - 'Класс Script': 'Java/Script.md'
         - 'Класс Message': 'Java/Message.md'
         - 'Класс WebSocket': 'Java/WebSocket.md'
-        - 'Пример Storehouse': 'Java/Storehouse.md'
+    - 'Примеры приложений'
+        - 'Склад (Android)': 'Java/Storehouse.md'
 theme_dir: 'material'
 extra:
   logo: 'logo.png'
