@@ -133,7 +133,7 @@ newDocument.saveDocument(new CallbackDocumentSaved() {
 | Параметр | Тип                     | Свойства     | Описание                                                 | Пример значения |
 | -------- | ----------------------- | ------------ | -------------------------------------------------------- | --------------- |
 | documentId | `String`   | Обязательный | Значение поля id документа коллекции                     | "nV0p50CDKq"    | 
-| callback | `CallbackFindDocument` | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
+| callback | `CallbackGetDocumentById` | Обязательный | Callback, который будет вызван после выполнения запроса. |                 | 
 
 **Пример** 
 
@@ -141,7 +141,7 @@ newDocument.saveDocument(new CallbackDocumentSaved() {
 ScorocodeSdk.initWith("db8a1b41b8543397a798a181d9891b4c", "563452bbc611d8106d5da767365897de", "28f06b89b62165c33de55265166d8781", null, null, null);
 
 final Document document = new Document("ordersCollection");
-document.getDocumentById("nV0p50CDKq", new CallbackFindDocument() {
+document.getDocumentById("nV0p50CDKq", new CallbackGetDocumentById() {
             @Override
             public void onDocumentFound(DocumentInfo documentInfo) {
                 //document found
