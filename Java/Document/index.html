@@ -1178,7 +1178,7 @@
 </tr>
 <tr>
 <td>callback</td>
-<td><code>CallbackFindDocument</code></td>
+<td><code>CallbackGetDocumentById</code></td>
 <td>Обязательный</td>
 <td>Callback, который будет вызван после выполнения запроса.</td>
 <td></td>
@@ -1189,7 +1189,7 @@
 <div class="codehilite"><pre><span></span><span class="n">ScorocodeSdk</span><span class="o">.</span><span class="na">initWith</span><span class="o">(</span><span class="s">&quot;db8a1b41b8543397a798a181d9891b4c&quot;</span><span class="o">,</span> <span class="s">&quot;563452bbc611d8106d5da767365897de&quot;</span><span class="o">,</span> <span class="s">&quot;28f06b89b62165c33de55265166d8781&quot;</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
 
 <span class="kd">final</span> <span class="n">Document</span> <span class="n">document</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Document</span><span class="o">(</span><span class="s">&quot;ordersCollection&quot;</span><span class="o">);</span>
-<span class="n">document</span><span class="o">.</span><span class="na">getDocumentById</span><span class="o">(</span><span class="s">&quot;nV0p50CDKq&quot;</span><span class="o">,</span> <span class="k">new</span> <span class="n">CallbackFindDocument</span><span class="o">()</span> <span class="o">{</span>
+<span class="n">document</span><span class="o">.</span><span class="na">getDocumentById</span><span class="o">(</span><span class="s">&quot;nV0p50CDKq&quot;</span><span class="o">,</span> <span class="k">new</span> <span class="n">CallbackGetDocumentById</span><span class="o">()</span> <span class="o">{</span>
             <span class="nd">@Override</span>
             <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onDocumentFound</span><span class="o">(</span><span class="n">DocumentInfo</span> <span class="n">documentInfo</span><span class="o">)</span> <span class="o">{</span>
                 <span class="c1">//document found</span>
